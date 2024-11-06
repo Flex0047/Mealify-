@@ -1,0 +1,54 @@
+#mode--btn {
+  display: none;
+}
+
+.light--mode {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dark--mode {
+  cursor: pointer;
+}
+
+body:has(#mode--btn:checked) .dark--mode {
+  display: none;
+}
+
+body:has(#mode--btn:checked) .light--mode {
+  display: inline-block;
+}
+
+:root:has(#mode--btn:checked) {
+  --light-bg-white: #171717;
+  --light-bg-grey: #252424;
+  --light-highlight: #c17e1f;
+  --light-main-color: #fff;
+  --light-sec-color: #6e6e6e;
+  --dark-bg-dark: #000000;
+}
+
+body:has(#mode--btn:checked) #chefs,
+body:has(#mode--btn:checked) #contact {
+  background-color: var(--light-bg-white);
+  color: #fff;
+}
+
+body:has(#mode--btn:checked) #chefs .showcase p,
+body:has(#mode--btn:checked).contact--container {
+  color: #fff !important;
+}
+
+body:has(#mode--btn:checked) p {
+  color: #fff;
+}
+
+body:has(#mode--btn:checked) #chefs .chefs--gallery--item img {
+  box-shadow: 0px 0px 5px #858585;
+  border: 2px solid #fff;
+}
+
+body:has(#mode--btn:checked) footer {
+  color: #fff;
+}

@@ -1,0 +1,141 @@
+@media (max-width: 1340px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #home .container section {
+    width: 45%;
+  }
+
+  #gallery .gallery-container {
+    height: 845px;
+    align-items: center;
+  }
+
+  /* #gallery .gallery-container .gallery-item {
+    width: 25%;
+  } */
+
+  .navbar .navbar__hamburger--btn {
+    display: block;
+  }
+
+  .navbar .navbar__list {
+    display: none;
+  }
+
+  nav:has(#navbar__list:target) {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.233);
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  nav:has(#navbar__list:target) .navbar__list {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 20rem;
+    top: 0;
+    right: 0;
+    background-color: var(--light-bg-white);
+  }
+  nav:has(#navbar__list:target) .navbar__list--close {
+    display: block;
+    padding: 1rem;
+    text-align: right;
+  }
+}
+
+@media (max-width: 992px) {
+  header #home {
+    height: 100%;
+  }
+
+  #home .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11rem;
+  }
+
+  #home .container section {
+    width: 100%;
+  }
+
+  #home .home__img {
+    order: 1;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  #home .home__text {
+    order: 2;
+    text-align: center;
+  }
+
+  #home .home__text--btns-box {
+    justify-content: center;
+  }
+  .home__text--btns-box .book {
+    border-radius: 4rem;
+  }
+
+  #chefs .chefs--gallery {
+    flex-wrap: wrap;
+  }
+  #chefs .chefs--gallery--item {
+    width: calc(100% / 2 - 1rem);
+  }
+
+  #gallery .gallery-container {
+    /* flex-direction: column; */
+    height: 1500px;
+  }
+
+  #gallery .gallery-container .gallery-item {
+    width: calc(100% / 2 - 2rem);
+    /* flex-direction: column; */
+  }
+
+  #contact .contact--container .contact--item {
+    width: 100%;
+  }
+
+  #contact form .group {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  #contact .group input {
+    width: 100%;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .touch {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #chefs .chefs--gallery--item {
+    width: 100%;
+  }
+
+  #home .home__text--btns-box {
+    flex-direction: column;
+  }
+
+  #gallery .gallery-container {
+    height: auto;
+  }
+  #gallery .gallery-container .gallery-item {
+    width: 100%;
+  }
+}
