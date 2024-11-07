@@ -500,7 +500,7 @@ textarea:focus {
 footer {
   background-color: var(--dark-bg-dark);
   background: linear-gradient(#00000046, #00000046),
-    url("../Images/textured-metal-background.jpg");
+    url("../Imagesg/textured-metal-background.jpg");
   background-position: cover;
   background-position: right;
   color: var(--light-bg-white);
