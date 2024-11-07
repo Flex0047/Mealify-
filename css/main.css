@@ -273,7 +273,7 @@ header #home {
   position: absolute;
   bottom: -0.5rem;
   left: -0.5rem;
-  background-image: url("../images/team-shape.svg");
+  background-image: url("../Images/team-shape.svg");
   min-width: 120%;
   height: 4rem;
   background-repeat: repeat-x;
@@ -500,7 +500,7 @@ textarea:focus {
 footer {
   background-color: var(--dark-bg-dark);
   background: linear-gradient(#00000046, #00000046),
-    url("../images/textured-metal-background.jpg");
+    url("../Images/textured-metal-background.jpg");
   background-position: cover;
   background-position: right;
   color: var(--light-bg-white);
